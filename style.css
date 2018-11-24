@@ -28,7 +28,7 @@ h1 {
 img {
   display: block;
   margin: 1rem auto;
-  max-width: 100%;
+  max-width: 50%;
 }
 
 p {
@@ -55,7 +55,7 @@ p1 {
   border-radius: 12px;
   overflow: hidden;
   transition: all .2s linear;
-}
+ }
 
 .card-green {
   background:rgb(65, 238, 65);
@@ -144,18 +144,16 @@ p1 {
 } 
 
 .modalTable {
-  background-color: white;
-  font-family: fantasy;
-  border: 2px solid black;
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
 }
 
-.modalTableRow {
-  background-color: grey;
-  font-family: fantasy;
-  border: 1px solid black;
+th, td {
+	padding: 15px;
+	color: black
 }
 
-.ModalTableTd {
-  background-color: white;
-  border: 0.5px solid black;
-}
+
+tr:nth-child(even) {background-color: #E1D8D8;}
+tr:nth-child(odd) {background-color: white;}
+tr:hover {background-color: #C1D8EF;}
