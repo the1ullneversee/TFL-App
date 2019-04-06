@@ -20,7 +20,6 @@ var span = document.getElementsByClassName("close")[0];
 var modalContent = document.getElementById('content');
 //----//
 //associative array
-var dictionary = [];
 
 request.onload = function () {
     var data = JSON.parse(request.response);
@@ -30,7 +29,6 @@ request.onload = function () {
             console.log(line.id);
             var lineId = line.id;
             lineId.replace(/[^a-zA-Z ]/g, "");
-            dictionary[lineId] = new TubeLine(lineId, line.name, line.modeName);
             const h1 = document.createElement('h1');
 
             h1.textContent = line.name;
